@@ -1,0 +1,44 @@
+/* Todo List */
+.TodoList{
+  margin-top: 24px;
+}
+
+
+/* Todo Item */
+.TodoItem{
+  width: 100%;
+  border-radius: 5px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  transition: .2s;
+  margin-bottom: 14px;
+}
+.TodoItem:hover{
+  transform: translateY(-3px);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+.TodoItem span{
+  font-size: 20px;
+  color: rgb(38, 38, 38);
+  padding: 4px 0;
+}
+
+.TodoItem.completed span{
+  text-decoration: line-through;
+  color: gray;
+}
+.DelateBtn{
+  color: orangered;
+  width: 40px;
+  background-color: transparent;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: .3s;
+}
+.DelateBtn:hover{
+  color: royalblue;
+  transform: scale(1.1);
+}

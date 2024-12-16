@@ -1,0 +1,68 @@
+@font-face {
+  font-family: 'GowunDodum-Regular';
+  src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/GowunDodum-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+/* common */
+*{
+  margin: 0;
+  padding: 0; 
+  box-sizing: border-box;
+}
+ul, ol, li{
+  list-style: none;
+}
+body, input::placeholder, button{
+  font-family: 'GowunDodum-Regular';
+}
+body{
+  background-color:cornsilk;
+}
+
+/* app.js */
+.Wrap{
+  max-width: 400px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  background-color: white;
+  text-align: center;
+  margin: 50px auto;
+  padding: 20px;
+}
+.Wrap h2{
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+.inputContainer{
+  display: flex;
+  justify-content: center;
+}
+
+.inputContainer input[type=text]{ 
+  border-radius: 5px;
+  border: 1px solid lightcoral;
+  margin-right: 10px;
+  padding: 10px;
+  background-color: rgb(255, 250, 251);
+  width: 80%;
+}
+.inputContainer input[type=text]:focus{
+  outline: 3px solid rgba(240, 128, 128, 0.4);
+}
+.AddBtn{
+  width: 15%;
+  font-size: 16px;
+  color: white;
+  background-color: lightcoral;
+  border: none;
+  height: 36px;
+  border-radius: 5px;
+  padding: 5px 10px;
+  transition: .3s;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.AddBtn:hover{
+  background-color: rgb(235, 96, 96);
+  transform: translateY(-3px);
+}
